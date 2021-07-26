@@ -7,8 +7,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #b8c6db;
-  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+  background-color: #f6f6f6;
+  background-image: linear-gradient(315deg, #f6f6f6 0%, #e9e9e9 74%);
   font-family:'Poppins', sans-serif;
 }
 
@@ -16,7 +16,7 @@ h1 {
   text-align: center;
   font-size: 3em;
   font-family: 'Pacifico', cursive;
-  color: rgb(53, 117, 235);
+  color: #4DB33D;
   padding: 1.5em;
 }
 
@@ -27,7 +27,7 @@ h2{
 }
 
 h4{
-  color: rgb(53, 117, 235);
+  color: #4DB33D;
 }
 
 input{
@@ -38,12 +38,12 @@ input{
 }
 
 .searchBox > button{
-  background-color: rgb(53, 117, 235);
+  background-color: #4DB33D;
   height: 38px;
   width: 60px;
   border: none;
   color: white;
-  box-shadow: 0px 3px 2px rgb(45, 108, 226);
+  box-shadow: 0px 3px 2px #439e34;
   cursor: pointer;
   padding: 0;
 }
