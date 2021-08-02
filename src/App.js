@@ -1,20 +1,22 @@
-import React from 'react';
-import { useState } from 'react';
+import { React, useState } from 'react';
 import Axios from 'axios';
 import './App.css';
 import { FaSearch } from "react-icons/fa";
 import { FcSpeaker } from "react-icons/fc";
 
 function App() {
+  //Setting up the inital states using react hook 'useState'
   const [data, setData] = useState("");
   const [searchWord, setSearchWord] = useState("");
 
+  //Function to fetch information on button click
   function getMeaning() {
       Axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en_US/${searchWord}`).then((response) => {
       setData(response.data[0]);
     });
   }
 
+  //Function to play the audio of the searched word
   function playAudio() {
     let audio = new Audio(data.phonetics[0].audio);
     audio.play();
